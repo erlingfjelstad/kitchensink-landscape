@@ -829,6 +829,9 @@ class CallControlsFragment : Fragment(), OnClickListener, CallObserverInterface 
         binding.ibScreenShare.setOnClickListener(this)
         binding.mainContentLayout.setOnClickListener(this)
         binding.ibMoreOption.setOnClickListener(this)
+        binding.ivForceLandscape.setOnClickListener {
+            forceLandscapeClickListener(null)
+        }
 
         initAddedCallControls()
 
